@@ -1,6 +1,9 @@
 # Algorithms - Notes from books/courses, JavaScript versions of algorithms 
+## Sources
+* Aditya Y. Bhargava, *Grokking Algorithms*
+* Princeton's Algorithms Course (Coursera)
 
-## Algorithms Covered So Far
+## TOC - Algorithms Covered So Far
 * simple Search
 * binary Search
 * selection Sort
@@ -8,8 +11,11 @@
 * merge sort
 * breadth-first search
 * Dijkstra's algorithm
+* quick find
+* quick union
+    * with weighting and path compression
 
-## Data Structures Covered so Far
+## TOC - Data Structures Covered so Far
 * arrays
 * sets
 * linked lists
@@ -30,3 +36,7 @@
 * greedy algorithms
 * approximation algorithms
 * NP-completeness
+* dynamic connectivity problem
+
+
+
