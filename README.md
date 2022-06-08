@@ -1,4 +1,4 @@
-# Notes on and JavaScript Versions of Algorithms from Bhargava's Grokking Algorithms
+# Algorithms - Notes from books/courses, JavaScript versions of algorithms 
 
 ## Algorithms Covered So Far
 * simple Search
@@ -8,7 +8,6 @@
 * merge sort
 * breadth-first search
 * Dijkstra's algorithm
- 
 
 ## Data Structures Covered so Far
 * arrays
