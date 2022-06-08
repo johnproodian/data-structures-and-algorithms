@@ -42,7 +42,7 @@
 
 ## binary search
 
-``
+```
     const binarySearch = function(listArr, item) {
         let low = 0;
         let high = listArr.length - 1;
@@ -61,4 +61,4 @@
         }
         return;   
     }
-``
+```
