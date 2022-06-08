@@ -42,7 +42,7 @@
 
 ## binary search
 
-`
+``
 // list parameter must be a *sorted* array
 
 const binarySearch = function(listArr, item) {
@@ -63,4 +63,4 @@ const binarySearch = function(listArr, item) {
     }
     return;   
 }
-`
+``
