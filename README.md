@@ -38,9 +38,11 @@
 * NP-completeness
 * dynamic connectivity problem
 
-## simple search
+## Algorithms
 
-## binary search
+### simple search
+
+### binary search
 
 ```
     const binarySearch = function(listArr, item) {
@@ -63,7 +65,7 @@
     }
 ```
 
-## selection sort
+### selection sort
 
 ```
 const findSmallest = function(arr) {
@@ -91,7 +93,7 @@ const selectionSort = function(arr) {
 
 ```
 
-## quicksort
+### quicksort
 
 Version 1: Use the first element of the array as the pivot
 
@@ -126,3 +128,9 @@ const quicksort = function(arr) {
     return quicksort(less).concat([pivot], quicksort(greater));
 }
 ```
+
+
+## Data Structures
+
+### arrays
+
