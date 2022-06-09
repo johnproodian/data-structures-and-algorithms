@@ -17,8 +17,8 @@ const binarySearch = function(listArr, item) {
     return;   
 }
 
+// Test the algorithm
 const myArr = [1, 3, 5, 7, 9];
-
 
 console.log('index of 3: ' + binarySearch(myArr, 3)); // should return 1
 console.log('index of -1: ' + binarySearch(myArr, -1)); // should return undefined

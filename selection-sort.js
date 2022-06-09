@@ -1,3 +1,5 @@
+// Sort a list from smallest to largest
+
 const findSmallest = function(arr) {
     let smallest = arr[0];
     let smallestIndex = 0;
@@ -12,10 +14,15 @@ const findSmallest = function(arr) {
 
 const selectionSort = function(arr) {
     newArr = [];
-    for (let i = 0; i < arr.length; i++) {
+
+    while (arr.length) {
         smallest = findSmallest(arr);
-        newArr.push(smallest);
+        newArr.push(arr.splice(smallest, 1)[0]);
     }
+
     return newArr;
 }
+
+// test it out
+console.log(selectionSort([5, 3, 6, 2, 10]));
 
