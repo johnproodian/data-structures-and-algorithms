@@ -132,5 +132,20 @@ const quicksort = function(arr) {
 
 ## Data Structures
 
-### arrays
 
+
+### arrays
+* store items right next to each other in memory (thus, the amount of space allotted for an array in memory has to be specified upon its creation)
+* along with [linked lists](#linked-lists), one of the two most basic ways of storing items in memory
+* Run Time for Common Operations:
+    * Reading:  O(1)
+        * **Why so fast?** *If you know the index and location of **any** other element in the array and the index of the given element you want to read, you can compute the location of the given element in memory.*
+    * Insertion: O(n)
+        * **Why so slow?** *Inserting into an array requires moving all of the elements that follow it in order to make room. It also may require finding a new space in memory (and new insertion for each element) for the whole array (i.e. **resizing**) if an insertion pushes the array to go over its allotted space.*
+    * Deletion: O(n)
+        * **Why so slow?** *Deletion requires shifting all the following elements back together after a deleted element*
+
+
+
+
+### linked lists
