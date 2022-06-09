@@ -5,7 +5,7 @@
 
 ## TOC - Algorithms Covered So Far
 * simple search
-* [binary search](##binary search)
+* [binary search](#binary-search)
 * selection sort
 * quicksort
 * merge sort
