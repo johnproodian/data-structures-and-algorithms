@@ -4,9 +4,9 @@
 * Princeton's Algorithms Course (Coursera)
 
 ## TOC - Algorithms Covered So Far
-* simple Search
-* [binary Search](#binary search)
-* selection Sort
+* simple search
+* [binary search](##binary search)
+* selection sort
 * quicksort
 * merge sort
 * breadth-first search
