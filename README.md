@@ -95,7 +95,7 @@ const selectionSort = function(arr) {
 
 Version 1: Use the first element of the array as the pivot
 
-``
+```
 const quicksort = function(arr) {
     if (arr.length < 2) {
         return arr;
@@ -109,11 +109,11 @@ const quicksort = function(arr) {
     
 }
 
-``
+```
 
 Version 2: Use a random as pivot
 
-``
+```
 const quicksort = function(arr) {
     if (arr.length < 2) return arr;
     
@@ -125,4 +125,4 @@ const quicksort = function(arr) {
 
     return quicksort(less).concat([pivot], quicksort(greater));
 }
-``
+```
