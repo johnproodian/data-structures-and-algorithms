@@ -111,7 +111,7 @@ const quicksort = function(arr) {
 
 ```
 
-Version 2: Use a random as pivot
+Version 2: Use a random element as pivot
 
 ```
 const quicksort = function(arr) {
