@@ -1,4 +1,4 @@
-# Algorithms - Notes from books/courses, JavaScript versions of algorithms 
+# Data Structures and Algorithms - Notes from books/courses, JavaScript versions 
 ## Sources
 * Aditya Y. Bhargava, *Grokking Algorithms*
 * Princeton's Algorithms Course (Coursera)
