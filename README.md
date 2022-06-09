@@ -16,9 +16,9 @@
     * with weighting and path compression
 
 ## TOC - Data Structures Covered so Far
-* arrays
+* [arrays](#arrays)
 * sets
-* linked lists
+* [linked lists](#linked-lists)
 * queues
 * stacks
     * call stacks
@@ -135,7 +135,7 @@ const quicksort = function(arr) {
 
 
 ### arrays
-* store items right next to each other in memory (thus, the amount of space allotted for an array in memory has to be specified upon its creation)
+* store elements right next to each other in memory (thus, the amount of space allotted for an array in memory has to be specified upon its creation)
 * along with [linked lists](#linked-lists), one of the two most basic ways of storing items in memory
 * Run Time for Common Operations:
     * Reading:  O(1)
@@ -143,9 +143,16 @@ const quicksort = function(arr) {
     * Insertion: O(n)
         * **Why so slow?** *Inserting into an array requires moving all of the elements that follow it in order to make room. It also may require finding a new space in memory (and new insertion for each element) for the whole array (i.e. **resizing**) if an insertion pushes the array to go over its allotted space.*
     * Deletion: O(n)
-        * **Why so slow?** *Deletion requires shifting all the following elements back together after a deleted element*
-
-
+        * **Why so slow?** *Deletion requires shifting all the following elements back together after a deleted element.*
 
 
 ### linked lists
+* store elements in various different places in memory, but keep the elements 'in order' by having each one **point** to (i.e. each on is **linked** to) the next element in the list.
+* along with [arrays](#arrays), one of the two most basic ways of storing items in memory
+* Run Time for Common Operations:
+    * Reading: O(n)
+        * **Why so slow?** *Unlike with arrays, a list element's index tells us nothing about where it is stored in memory. That information is held by the element before it, whose place is stored by the element before it, and so on. In order to find it in memory, we need to run through all of the elements prior to it in the list.*
+    * Insertion: O(1)
+        * **Why so fast?** *All that is required to insert an element into a list is to change the location that the previous element points to--no moving of any other elements in the list is required.*
+    * Deletion: O(1)
+        * **Why so fast?** *Just as with insertion, all that is required in deleting an item is to change the location that the previous item pointed to in memory (i.e. the location of the element to be deleted) to the location of the element that comes after the deleted element. No other elements need to be moved or changed.*
