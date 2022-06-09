@@ -7,7 +7,7 @@
 * simple search
 * [binary search](#binary-search)
 * [selection sort](#selection-sort)
-* quicksort
+* [quicksort](#quicksort)
 * merge sort
 * breadth-first search
 * Dijkstra's algorithm
