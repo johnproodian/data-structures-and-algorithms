@@ -138,7 +138,7 @@ const quicksort = function(arr) {
     1. is there a path from node A to node B?
     2. what is the shortest path from node A to node B?
 
-* **breadth-first search *in short*:** Create a queue and add node A's neighbors to it. Pop off the first neighbor, and check to see if it is (a) node B. If it doesn't, add node that neighbor's neighbors to the queue (if they haven't already been checked) and continue to the next node in the queue. Repeat until node B is reached or all the nodes have been checked and no node B has been found.
+* **breadth-first search *in short*:** Create a queue and add node A's neighbors to it. Pop off the first neighbor, and check to see if it is (a) node B. If it isn't, add that neighbor node's neighbors to the queue (if they haven't already been checked) and continue to the next node in the queue. Repeat until node B is reached or all the nodes have been checked and no node B has been found.
 
 ``
 const search(name) {
