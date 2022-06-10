@@ -9,7 +9,7 @@
 * [selection sort](#selection-sort)
 * [quicksort](#quicksort)
 * merge sort
-* breadth-first search
+* [breadth-first search](#breadth-first-search)
 * Dijkstra's algorithm
 * quick find
 * quick union
@@ -44,11 +44,15 @@
 
 ### binary search
 
+* **Problem(s) that binary search can solve:** (Search problem:) Given a sorted array and an item, find the index in the array of the item or return null if it doesn't exist.
+
+* **binary search *in short*:** Compare the given element to the middle element of the array. Return the middle element's index if the item equals the middle element. Otherwise, if the middle element was too high, remove all the elements equal to the middle element and higher from consideration, and if the middle element was too low, remove all the elements equal to the middle element or lower from consideration. Then, repeat the comparison of the given item with the middle element of the elements that haven't been removed and repeat the removing accordingly until the middle element matches the item or you run out of elements (in which case the item does not exist as an element in the array).
+
 ```
     const binarySearch = function(listArr, item) {
         let low = 0;
         let high = listArr.length - 1;
-       let mid;
+        let mid;
 
         while (low <= high) {
             mid = Math.floor((low + high) / 2);
@@ -128,6 +132,19 @@ const quicksort = function(arr) {
     return quicksort(less).concat([pivot], quicksort(greater));
 }
 ```
+### breadth-first search (BFS)
+
+* **Problem(s) that BFS can solve:** Given a graph that contains nodes A and B,
+    1. is there a path from node A to node B?
+    2. what is the shortest path from node A to node B?
+
+* **breadth-first search *in short*:** Create a queue and add node A's neighbors to it. Pop off the first neighbor, and check to see if it is (a) node B. If it doesn't, add node that neighbor's neighbors to the queue (if they haven't already been checked) and continue to the next node in the queue. Repeat until node B is reached or all the nodes have been checked and no node B has been found.
+
+``
+const search(name) {
+    
+}
+``
 
 
 ## Data Structures
