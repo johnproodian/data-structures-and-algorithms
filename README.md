@@ -2,6 +2,7 @@
 ## Sources
 * Aditya Y. Bhargava, *Grokking Algorithms*
 * Princeton's Algorithms Course (Coursera)
+* *the Internet...*
 
 ## TOC - Algorithms Covered So Far
 * simple search
@@ -17,10 +18,10 @@
 
 ## TOC - Data Structures Covered so Far
 * [arrays](#arrays)
-* sets
+* [sets](#sets)
 * [linked lists](#linked-lists)
-* queues
-* stacks
+* [queues](#queues)
+* [stacks](#stacks)
     * call stacks
 * hash tables
 * graphs
@@ -140,11 +141,11 @@ const quicksort = function(arr) {
 
 * **breadth-first search *in short*:** Create a queue and add node A's neighbors to it. Pop off the first neighbor, and check to see if it is (a) node B. If it isn't, add that neighbor node's neighbors to the queue (if they haven't already been checked) and continue to the next node in the queue. Repeat until node B is reached or all the nodes have been checked and no node B has been found.
 
-``
+```
 const search(name) {
-    
+
 }
-``
+```
 
 
 ## Data Structures
@@ -163,6 +164,19 @@ const search(name) {
         * **Why so slow?** *Deletion requires shifting all the following elements back together after a deleted element.*
 
 
+### sets
+* similar to arrays, but don't allow for duplicates
+    * e.g. 
+        ```
+        let arr = [1, 2, 1, 2];
+        let set = new Set (arr);
+        console.log(set); // Set {1, 2}
+        ```
+* interesting set operations (not built into JavaScript??):
+    * union: combining multiple sets
+    * intersection: getting the items that show up in all of the given sets
+    * difference: the result of subtracting items of one set from that of another
+
 ### linked lists
 * store elements in various different places in memory, but keep the elements 'in order' by having each one **point** to (i.e. each on is **linked** to) the next element in the list.
 * along with [arrays](#arrays), one of the two most basic ways of storing items in memory
@@ -173,3 +187,16 @@ const search(name) {
         * **Why so fast?** *All that is required to insert an element into a list is to change the location that the previous element points to--no moving of any other elements in the list is required.*
     * Deletion: O(1)
         * **Why so fast?** *Just as with insertion, all that is required in deleting an item is to change the location that the previous item pointed to in memory (i.e. the location of the element to be deleted) to the location of the element that comes after the deleted element. No other elements need to be moved or changed.*
+
+
+### stacks
+* store items in a pile so that access is limited to the last item added to it (i.e. *LIFO* - 'last in, first out')
+* two operations:
+    * *push*: add an item to the top of the stack
+    * *pop*: remove an item (the last one added) from the stack
+
+### queues
+
+
+
+
