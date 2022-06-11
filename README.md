@@ -22,7 +22,7 @@
 * [linked lists](#linked-lists)
 * [queues](#queues)
 * [stacks](#stacks)
-    * call stacks
+    * [call stacks](#call-stacks)
 * hash tables
 * graphs
     * directed and undirected graphs
@@ -194,8 +194,10 @@ const search(name) {
 * two operations:
     * *push*: add an item to the top of the stack
     * *pop*: remove an item (the last one added) from the stack
+* #### call stacks
 
 ### queues
+* store linearly like stacks but 
 
 
 
