@@ -20,9 +20,9 @@
 * [arrays](#arrays)
 * [sets](#sets)
 * [linked lists](#linked-lists)
-* [queues](#queues)
 * [stacks](#stacks)
     * [call stacks](#call-stacks)
+* [queues](#queues)
 * hash tables
 * graphs
     * directed and undirected graphs
@@ -194,10 +194,16 @@ const search(name) {
 * two operations:
     * *push*: add an item to the top of the stack
     * *pop*: remove an item (the last one added) from the stack
-* #### call stacks
+* #### call stacks 
+    * are created when functions are called in order for an interpreter to keep track of which function(s) is/are currently running.
+    * when a function is called within another function, the inner function is placed on the top of the stack and executed while the functions below it are paused in a partially completed state until the current function (and the functions that it calls) are completed.
 
 ### queues
-* store linearly like stacks but 
+* store items according to *FIFO* ('first in, first out) principle--the element inserted first comes out first.
+* items inserted from the *rear*, deleted from the *front*
+* two operations:
+    * *enqueue*: add item to the queue
+    * *dequeue*: remove item from the queue
 
 
 
