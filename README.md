@@ -217,6 +217,9 @@ const search(name) {
 
 
 ### graphs
+* use nodes (points on the graph) and edges (lines connecting nodes) to model a set of connections.
+* nodes are the dots, edges are the lines between them
+    * if 
 
 
 ### trees
