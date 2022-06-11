@@ -23,10 +23,10 @@
 * [stacks](#stacks)
     * [call stacks](#call-stacks)
 * [queues](#queues)
-* hash tables
-* graphs
+* [hash tables](#hash-tables)
+* [graphs](#graphs)
     * directed and undirected graphs
-* trees
+* [trees](#trees)
 
 ## Other Concepts, Techniques, etc.
 * running time
@@ -69,6 +69,7 @@
         return;   
     }
 ```
+
 
 ### selection sort
 
@@ -204,6 +205,21 @@ const search(name) {
 * two operations:
     * *enqueue*: add item to the queue
     * *dequeue*: remove item from the queue
+
+[Work in progress...:] ### hash tables (AKA "hash maps," "maps," "dictionaries," "associative arrays")
+* arrays in which a hash function is used to intelligently store elements
+* hash tables store key-value pairs
+* the idea: if we have have a function (i.e., a *hash function*) that consistently returns a number for any string that we give it--a number that falls with the range of available slots in an array--then we can store values at the various indexes that the function returns and identify (read, delete, etc.) those values by their 'keys,' instead of needing to know the indexes directly.
+    * this is helpful because keys are usually more meaningful than indexes (e.g. "I want to find the price of milk" --> use the hash function to find the location of the price of milk)
+    * 
+* **hash functions** return a number for any data that it is given; ideally, they return a consistent number for each piece of data and different numbers for different data entered
+    * Hash functions map strings to numbers, meaning that you can give it any key in the hash table and it will return the index of the 
+
+
+### graphs
+
+
+### trees
 
 
 
