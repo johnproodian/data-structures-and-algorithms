@@ -223,7 +223,7 @@ const search(name) {
             * should map different strings to different indexes (though this isn't always possible)
         * **problems**:
             * *collisions* - when multiple keys are mapped to the same index. Sometimes this is unavoidable. When it happens, a linked list can be created at that index to store all the values that are mapped there (along with their keys).
-        * **good hash functions**: limit collisions by spreading out values evenly throughout the array. If 
+        * **good hash functions**: limit collisions by spreading out values evenly throughout the array. 
 * **performance (Reading)**:
     * With a good hash function: O(1)
     * With a bad hash function: O(n)
