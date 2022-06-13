@@ -228,6 +228,11 @@ const search(name) {
     * With a good hash function: O(1)
     * With a bad hash function (worst case): O(n)
     * **Why?** The fewer the collisions, the more often reading can take advantage of the hash table being an array (O(1)). The more the collisions, the more linked list elements will have to be searched through for each lookup (closer to O(n)).
+* **hash tables in JavaScript**
+* **practice with hash tables**:
+    * LeetCode:
+        * [1. Two Sum (easy)](https://leetcode.com/problems/two-sum/)
+
 
 
 ### graphs
