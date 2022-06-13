@@ -70,6 +70,10 @@
     }
 ```
 
+* **practice**:
+    *LeetCode:
+        *[704.Binary Search (easy)](https://leetcode.com/problems/binary-search/)
+
 
 ### selection sort
 
