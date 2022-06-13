@@ -73,6 +73,7 @@
 * **practice**:
    * LeetCode: 
       * [704.Binary Search (easy)](https://leetcode.com/problems/binary-search/)
+      * [More?](https://leetcode.com/tag/binary-search/)
 
 
 ### selection sort
