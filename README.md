@@ -211,20 +211,28 @@ const search(name) {
     * *enqueue*: add item to the queue
     * *dequeue*: remove item from the queue
 
-[Work in progress...:] ### hash tables (AKA "hash maps," "maps," "dictionaries," "associative arrays")
-* arrays in which a hash function is used to intelligently store elements
-* hash tables store key-value pairs
-* the idea: if we have have a function (i.e., a *hash function*) that consistently returns a number for any string that we give it--a number that falls with the range of available slots in an array--then we can store values at the various indexes that the function returns and identify (read, delete, etc.) those values by their 'keys,' instead of needing to know the indexes directly.
-    * this is helpful because keys are usually more meaningful than indexes (e.g. "I want to find the price of milk" --> use the hash function to find the location of the price of milk)
-    * 
-* **hash functions** return a number for any data that it is given; ideally, they return a consistent number for each piece of data and different numbers for different data entered
-    * Hash functions map strings to numbers, meaning that you can give it any key in the hash table and it will return the index of the 
+### hash tables (AKA "hash maps," "maps," "dictionaries," "associative arrays")
+* **in short**: a *hash table* is an array (and often an array of linked lists) of values where:
+    1. each value is associated with a unique key (key-value pairing),
+    2. the index (i.e. the location) of each value is the result of running the key through the hash table's *hash function*.
+* the significance of this is that we can look up the value associated with the key instantly (if the hash table's hash function is good).
+* **in greater detail**:
+    * *hash functions*: functions where you input a string (any data)--the key--and get back a number. More precisely, the string is converted to hashcode, then to an integer that serves as the index that the value will be stored at in the array.
+        * **requirements of hash functions**:
+            * *consistency*: needs to return the same index every time.
+            * should map different strings to different indexes (though this isn't always possible)
+        * **problems**:
+            * *collisions* - when multiple keys are mapped to the same index. Sometimes this is unavoidable. When it happens, a linked list can be created at that index to store all the values that are mapped there (along with their keys).
+        * **good hash functions**: limit collisions by spreading out values evenly throughout the array. If 
+* **performance (Reading)**:
+    * With a good hash function: O(1)
+    * With a bad hash function: O(n)
+    * **Why?** The fewer the collisions, the more often reading can take advantage of the hash table being an array (O(1)). The more the collisions, the more linked list elements will have to be searched through for each lookup (closer to O(n)).
 
 
 ### graphs
 * use nodes (points on the graph) and edges (lines connecting nodes) to model a set of connections.
 * nodes are the dots, edges are the lines between them
-    * if 
 
 
 ### trees
