@@ -31,12 +31,13 @@
 ## Other Concepts, Techniques, etc.
 * running time
     * Big O Notation
-* traveling salesperson problem
 * recursion
 * divide and conquer
+* NP-completeness
+    * traveling salesperson problem
+    * set-covering problem
 * greedy algorithms
 * approximation algorithms
-* NP-completeness
 * dynamic connectivity problem
 
 ## Algorithms
