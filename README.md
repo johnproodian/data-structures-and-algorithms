@@ -43,33 +43,46 @@
 ## Algorithms
 
 ### simple search
+    * **problem(s) that simple search can solve:**
+
+    * **simple search *in short*: ** 
+
+    * **run time**:
+
+    * **code**:
+
+    * **practice**
 
 ### binary search
 
-* **Problem(s) that binary search can solve:** (Search problem:) Given a sorted array and an item, find the index in the array of the item or return null if it doesn't exist.
+* **problem(s) that binary search can solve:** (Search problem:) Given a sorted array and an item, find the index in the array of the item or return null if it doesn't exist.
 
 * **binary search *in short*:** Compare the given element to the middle element of the array. Return the middle element's index if the item equals the middle element. Otherwise, if the middle element was too high, remove all the elements equal to the middle element and higher from consideration, and if the middle element was too low, remove all the elements equal to the middle element or lower from consideration. Then, repeat the comparison of the given item with the middle element of the elements that haven't been removed and repeat the removing accordingly until the middle element matches the item or you run out of elements (in which case the item does not exist as an element in the array).
 
-```
-    const binarySearch = function(listArr, item) {
-        let low = 0;
-        let high = listArr.length - 1;
-        let mid;
+* **run time**:
 
-        while (low <= high) {
-            mid = Math.floor((low + high) / 2);
-            let guess = listArr[mid];
-            if (guess === item) {
-                return mid;
-            } else if (guess > item) {
-                high = mid - 1;
-            } else {
-                low = mid + 1;
+* **code**:
+
+    ```
+        const binarySearch = function(listArr, item) {
+            let low = 0;
+            let high = listArr.length - 1;
+            let mid;
+
+            while (low <= high) {
+                mid = Math.floor((low + high) / 2);
+                let guess = listArr[mid];
+                if (guess === item) {
+                    return mid;
+                } else if (guess > item) {
+                    high = mid - 1;
+                } else {
+                    low = mid + 1;
+                }
             }
+            return;   
         }
-        return;   
-    }
-```
+    ```
 
 * **practice**:
    * LeetCode: 
@@ -79,67 +92,85 @@
 
 ### selection sort
 
-```
-const findSmallest = function(arr) {
-    let smallest = arr[0];
-    let smallestIndex = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < smallest) {
-            smallest = arr[i];
-            smallestIndex = i;
+* **problem(s) that selection sort can solve**:
+
+* **selection sort *in short***:
+
+* **run time**:
+
+* **code**:
+
+    ```
+    const findSmallest = function(arr) {
+        let smallest = arr[0];
+        let smallestIndex = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < smallest) {
+                smallest = arr[i];
+                smallestIndex = i;
+            }
         }
-    }
-    return smallestIndex;
-}
-
-const selectionSort = function(arr) {
-    newArr = [];
-
-    while (arr.length) {
-        smallest = findSmallest(arr);
-        newArr.push(arr.splice(smallest, 1)[0]);
+        return smallestIndex;
     }
 
-    return newArr;
-}
+    const selectionSort = function(arr) {
+        newArr = [];
 
-```
+        while (arr.length) {
+            smallest = findSmallest(arr);
+            newArr.push(arr.splice(smallest, 1)[0]);
+        }
+
+        return newArr;
+    }
+
+    ```
+
+* **practice**
 
 ### quicksort
 
-Version 1: Use the first element of the array as the pivot
+* **problem(s) that quicksort can solve**:
 
-```
-const quicksort = function(arr) {
-    if (arr.length < 2) {
-        return arr;
-    } 
-    
-    let pivot = arr[0];
-    let less = arr.slice(1).filter(el => el <= pivot);
-    let greater = arr.slice(1).filter(el => el > pivot);
+* **quicksort *in short***:
 
-    return quicksort(less).concat([pivot], quicksort(greater));
-    
-}
+* **run time**:
 
-```
+* **code**:
 
-Version 2: Use a random element as pivot
+    Version 1: Use the first element of the array as the pivot
 
-```
-const quicksort = function(arr) {
-    if (arr.length < 2) return arr;
-    
-    let randomIndex = Math.floor(arr.length * Math.random());
-    let pivot = arr[randomIndex];
-    arr.splice(randomIndex, 1)
-    let less = arr.filter(el => el <= pivot);
-    let greater = arr.filter(el => el > pivot);
+    ```
+    const quicksort = function(arr) {
+        if (arr.length < 2) {
+            return arr;
+        } 
+        
+        let pivot = arr[0];
+        let less = arr.slice(1).filter(el => el <= pivot);
+        let greater = arr.slice(1).filter(el => el > pivot);
 
-    return quicksort(less).concat([pivot], quicksort(greater));
-}
-```
+        return quicksort(less).concat([pivot], quicksort(greater));
+        
+    }
+
+    ```
+
+    Version 2: Use a random element as pivot
+
+    ```
+    const quicksort = function(arr) {
+        if (arr.length < 2) return arr;
+        
+        let randomIndex = Math.floor(arr.length * Math.random());
+        let pivot = arr[randomIndex];
+        arr.splice(randomIndex, 1)
+        let less = arr.filter(el => el <= pivot);
+        let greater = arr.filter(el => el > pivot);
+
+        return quicksort(less).concat([pivot], quicksort(greater));
+    }
+    ```
 
 * **practice**:
     * LeetCode:
@@ -151,13 +182,18 @@ const quicksort = function(arr) {
     1. is there a path from node A to node B?
     2. what is the shortest path from node A to node B?
 
-* **breadth-first search *in short*:** Create a queue and add node A's neighbors to it. Pop off the first neighbor, and check to see if it is (a) node B. If it isn't, add that neighbor node's neighbors to the queue (if they haven't already been checked) and continue to the next node in the queue. Repeat until node B is reached or all the nodes have been checked and no node B has been found.
+* **breadth-first search *in short***: Create a queue and add node A's neighbors to it. Pop off the first neighbor, and check to see if it is (a) node B. If it isn't, add that neighbor node's neighbors to the queue (if they haven't already been checked) and continue to the next node in the queue. Repeat until node B is reached or all the nodes have been checked and no node B has been found.
 
-```
-const search(name) {
+* **run time**:
 
-}
-```
+* **code**:
+
+    ```
+    const search(name) {
+
+    }
+    ```
+* **practice**:
 
 
 ## Data Structures
