@@ -5,16 +5,20 @@
 * *the Internet...*
 
 ## TOC - Algorithms Covered So Far
-* simple search
+* [simple search](#simple-search)
 * [binary search](#binary-search)
 * [selection sort](#selection-sort)
+* bubble sort
 * [quicksort](#quicksort)
-* merge sort
+* [merge sort](#merge-sort)
+* [run time comparison: sorting algorithms](#run-time-comparison:-sorting-algorithms)
 * [breadth-first search](#breadth-first-search)
-* Dijkstra's algorithm
+* [Dijkstra's algorithm](#dijkstra's-algorithm)
+* depth-first search
 * quick find
 * quick union
     * with weighting and path compression
+* reverse a linked list
 
 ## TOC - Data Structures Covered so Far
 * [arrays](#arrays)
@@ -27,10 +31,13 @@
 * [graphs](#graphs)
     * directed and undirected graphs
 * [trees](#trees)
+* constructing your own
+    * suffix-tree
 
 ## Other Concepts, Techniques, etc.
 * running time
     * Big O Notation
+* space complexity
 * [recursion](#recursion)
 * divide and conquer
 * NP-completeness
@@ -39,13 +46,16 @@
 * greedy algorithms
 * approximation algorithms
 * dynamic connectivity problem
+* matching parenthesis problem
+* manipulating variables/pointers
+* [object oriented programming (how to use it)](#object-oriented-programming)
 
 ## Algorithms
 
 ### simple search
-    * **problem(s) that simple search can solve:**
+    * **problem(s) that simple search can solve**:
 
-    * **simple search *in short*: ** 
+    * **simple search *in short* **:
 
     * **run time**:
 
@@ -176,13 +186,27 @@
     * LeetCode:
         * 
 
+### merge sort
+
+* **problem(s) that merge sort can solve:**:
+
+* **merge sort *in short***:
+
+* **run time**:
+
+* **code**:
+
+* **practice**:
+
+### run time comparison: sorting algorithms
+
 ### breadth-first search (BFS)
 
-* **Problem(s) that BFS can solve:** Given a graph that contains nodes A and B,
+* **problem(s) that BFS can solve:** Given a graph that contains nodes A and B,
     1. is there a path from node A to node B?
     2. what is the shortest path from node A to node B?
 
-* **breadth-first search *in short***: Create a queue and add node A's neighbors to it. Pop off the first neighbor, and check to see if it is (a) node B. If it isn't, add that neighbor node's neighbors to the queue (if they haven't already been checked) and continue to the next node in the queue. Repeat until node B is reached or all the nodes have been checked and no node B has been found.
+* **BFS *in short***: Create a queue and add node A's neighbors to it. Pop off the first neighbor, and check to see if it is (a) node B. If it isn't, add that neighbor node's neighbors to the queue (if they haven't already been checked) and continue to the next node in the queue. Repeat until node B is reached or all the nodes have been checked and no node B has been found.
 
 * **run time**:
 
@@ -194,6 +218,34 @@
     }
     ```
 * **practice**:
+
+### Dijkstra's algorithm
+
+* **problem(s) Dijkstra's algorithm can solve**:
+
+* **Dijkstra's algorithm *in short***:
+
+* **run time**:
+
+* **code**:
+
+* **practice**:
+
+
+### depth-first search (DFS)
+
+* **problem(s) depth-first search can solve**:
+
+* **DFS *in short***:
+
+* **run time**:
+
+* **code**:
+
+* **practice**:
+
+
+###
 
 
 ## Data Structures
@@ -292,6 +344,16 @@
 * recursive functions have a *base case* and a *recursive case* in order to avoid going into an infinite loop from calling itself again and again:
     * **base case** - the condition that stops the function when it is met
     * **recursive case** - the condition that calls the function again when it is met
+
+
+### manipulating variables/pointers
+* **practice**:
+    * LeetCode:
+        * [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+
+
+### object oriented programming
+    * being able to construct a class/encapsulates logic in class method rather than main method like a for loop
 
 
 
