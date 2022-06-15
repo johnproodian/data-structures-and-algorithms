@@ -31,7 +31,7 @@
 * [graphs](#graphs)
     * directed and undirected graphs
 * [trees](#trees)
-* constructing your own
+* constructing your own DS
     * suffix-tree
 
 ## Other Concepts, Techniques, etc.
