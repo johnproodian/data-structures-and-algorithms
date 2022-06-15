@@ -31,7 +31,7 @@
 ## Other Concepts, Techniques, etc.
 * running time
     * Big O Notation
-* recursion
+* [recursion](#recursion)
 * divide and conquer
 * NP-completeness
     * traveling salesperson problem
@@ -247,6 +247,17 @@ const search(name) {
 
 
 ### trees
+
+
+## Other Concepts, Techniques, etc.
+
+### recursion
+* the coding technique in which a function calls itself
+* recursive functions have a *base case* and a *recursive case* in order to avoid going into an infinite loop from calling itself again and again:
+    * **base case** - the condition that stops the function when it is met
+    * **recursive case** - the condition that calls the function again when it is met
+
+
 
 
 
