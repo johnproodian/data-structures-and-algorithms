@@ -1,6 +1,7 @@
 # Data Structures and Algorithms - Notes from books/courses, JavaScript versions of code
 ## Sources
 * Aditya Y. Bhargava, *Grokking Algorithms*
+* Gayle Laakmann McDowell, *Cracking the Coding Interview*
 * Princeton's Algorithms Course (Coursera)
 * *the Internet...*
 
@@ -31,13 +32,17 @@
 * [graphs](#graphs)
     * directed and undirected graphs
 * [trees](#trees)
+* tries
+* heaps
+* vectors
+* arrayLists
 * constructing your own DS
     * suffix-tree
 
-## Other Concepts, Techniques, etc.
-* running time
-    * Big O Notation
-* space complexity
+## Other Concepts
+* Big O notation
+    * time complexity
+    * space complexity
 * [recursion](#recursion)
 * divide and conquer
 * NP-completeness
@@ -49,6 +54,9 @@
 * matching parenthesis problem
 * manipulating variables/pointers
 * [object oriented programming (how to use it)](#object-oriented-programming)
+* bit manipulation
+* memory (stack vs. heap)
+* dynamic programming
 
 ## Algorithms
 
