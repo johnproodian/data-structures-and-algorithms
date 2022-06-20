@@ -19,7 +19,7 @@
 * quick find
 * quick union
     * with weighting and path compression
-* reverse a linked list
+* reversing a linked list
 
 ## TOC - Data Structures Covered so Far
 * [arrays](#arrays)
