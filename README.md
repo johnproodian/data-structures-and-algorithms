@@ -32,8 +32,9 @@
 * [graphs](#graphs)
     * directed and undirected graphs
 * [trees](#trees)
+    * binary search tree??
 * [tries](#tries)
-* heaps
+* [heaps](#heaps)
 * vectors
 * arrayLists
 * constructing your own DS
@@ -349,6 +350,27 @@
 
 ### trees
 * a graph in which no edges ever point back (i.e. they don't point to parents or siblings, only to their children, if they have any)
+
+### tries (AKA 'suffix trees')
+* trees that (usually?) store words by putting each of their letters at a node and connecting the letters for each word together by the tree's edges. Two words with the same prefix would be stored as the same branch as far as the prefixed letters go and then diverge.
+
+* **practice**
+    * LeetCode:
+        * [208. Implement Trie (Prefix Tree) (easy)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+
+### heaps
+* complete binary trees--i.e. trees where each parent has two children, and each level is filled before moving down to the next level to fill--where either (1) the root is the smallest value and all the values get bigger as you move down the tree (=min heap) or (2) the root is the largest value and all the values get smaller as you move down the tree (=max heap). It *does not* matter the order of the children nodes at each level
+* insertion--top to bottom, left to right, as described above (complete binary tree); then, each inserted element is checked against its parent and swapped up with the parent if the new value is smaller (min heap) or larger (max heap), on and on until it finds a parent value it doesn't need to swap with.
+    * deletion of root--add the most recently added value to the root and bubble it down (opposite of the previous check) until it is in the right place
+
+
+* see for JS: https://www.youtube.com/watch?v=dM_JHpfFITs
+    * two ways to implement--
+        * (1) tree structures with nodes that contain left and right references (like a binary search tree?)
+        * (2) as arrays:
+            - array keeps track of the values (index 0 is null, 1 is root, 2 + 3 is second level, 4-7 is third level, so on); left child = i *2, right child is i * 2 + 1, parent is i/2
+
+* **practice**
 
 
 ## Other Concepts, Techniques, etc.
