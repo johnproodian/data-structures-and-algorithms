@@ -32,7 +32,7 @@
 * [graphs](#graphs)
     * directed and undirected graphs
 * [trees](#trees)
-* tries
+* [tries](#tries)
 * heaps
 * vectors
 * arrayLists
@@ -336,7 +336,6 @@
         * [1. Two Sum (easy)](https://leetcode.com/problems/two-sum/)
 
 
-
 ### graphs
 * use nodes (points on the graph) and edges (lines connecting nodes) to model sets of connections. 
     ### directed and undirected graphs
@@ -344,12 +343,12 @@
     * **undirected graphs** - graphs where the edges are two-directional (each edge simultaneously points one node to another and vice versa)
     * **cycles** - where two nodes both point to each other--whether in a directed or undirected graph.
     ### weighted and unweighted graphs
-    * 
-
-
-
+    * **weighted graphs** - graphs in which the edges have numbers associated with them
+    * **unweighted graphs** - graphs in which edges *do not* have numbers associated with them
+ 
 
 ### trees
+* a graph in which no edges ever point back (i.e. they don't point to parents or siblings, only to their children, if they have any)
 
 
 ## Other Concepts, Techniques, etc.
