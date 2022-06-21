@@ -338,8 +338,15 @@
 
 
 ### graphs
-* use nodes (points on the graph) and edges (lines connecting nodes) to model a set of connections.
-* nodes are the dots, edges are the lines between them
+* use nodes (points on the graph) and edges (lines connecting nodes) to model sets of connections. 
+    ### directed and undirected graphs
+    * **directed graphs** - graphs where the edges are one-directional (point from one node to another). Two nodes *can* point to each other, but that requires separate two nodes.
+    * **undirected graphs** - graphs where the edges are two-directional (each edge simultaneously points one node to another and vice versa)
+    * **cycles** - where two nodes both point to each other--whether in a directed or undirected graph.
+    ### weighted and unweighted graphs
+    * 
+
+
 
 
 ### trees
