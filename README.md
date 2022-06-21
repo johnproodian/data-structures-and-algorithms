@@ -35,7 +35,7 @@
     * binary search tree??
 * [tries](#tries)
 * [heaps](#heaps)
-* vectors
+* [vectors](#vectors)
 * arrayLists
 * constructing your own DS
     * suffix-tree
@@ -371,6 +371,9 @@
             - array keeps track of the values (index 0 is null, 1 is root, 2 + 3 is second level, 4-7 is third level, so on); left child = i *2, right child is i * 2 + 1, parent is i/2
 
 * **practice**
+
+
+### vectors
 
 
 ## Other Concepts, Techniques, etc.
