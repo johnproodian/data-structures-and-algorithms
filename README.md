@@ -36,7 +36,7 @@
 * [tries](#tries)
 * [heaps](#heaps)
 * [vectors](#vectors)
-* arrayLists
+* [arrayLists](#arrayLists)
 * constructing your own DS
     * suffix-tree
 
@@ -374,6 +374,10 @@
 
 
 ### vectors
+
+### arrayLists
+* tentatively: arrays that, when they become full, automatically create a new array double the size and copy the contents of the original into the new one. 
+* can make calculating time complexity interesting
 
 
 ## Other Concepts, Techniques, etc.
