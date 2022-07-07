@@ -1,4 +1,6 @@
 # Data Structures and Algorithms - Notes from books/courses, JavaScript versions of code
+I created this document to force myself to articulate the data structures and algorithms concepts that I am learning.
+
 ## Sources
 * Aditya Y. Bhargava, *Grokking Algorithms*
 * Gayle Laakmann McDowell, *Cracking the Coding Interview*
